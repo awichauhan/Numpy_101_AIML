@@ -18,7 +18,23 @@ print("Shape", ThreeDArray.shape)
 print("Dimension", ThreeDArray.ndim)
 
 
-# shape is (2, 3, 3); means :
-# 2 matrices
-# 2 rows in each matrix
-# 3 columns in each row
+# shape is (2, 3, 3); means : shape = (matrices, rows, columns)
+
+# NumPy converts the integers into floating-point numbers so that the entire array has a common data type.
+
+ThreeDFloatArray = np.array([
+    [
+        [10.2,4,5],
+        [20,5,6]
+    ],
+    [
+        [30,60,30],
+        [2.5,60,70]
+    ]
+])
+
+print(ThreeDFloatArray)
+print(type(ThreeDFloatArray))
+print(ThreeDFloatArray.dtype)
+
+# because of one element, entire array datatype is changed to floattype
